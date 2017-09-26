@@ -89,5 +89,6 @@ class tftp (
     hasstatus => $tftp::params::hasstatus,
     pattern   => '/usr/sbin/in.tftpd',
     start     => $start,
+    require   => Package[$virtual_package],
   }
 }
